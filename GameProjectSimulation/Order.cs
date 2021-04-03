@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    class Order
+    public class Order
     {
         public int Id { get; set; }
         public string GameName { get; set; }

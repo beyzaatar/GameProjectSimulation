@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    class CampaignManager : ICampaignService
+    public class CampaignManager : ICampaignService
     {
         public void Add(Campaign campaign)
         {

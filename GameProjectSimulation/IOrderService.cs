@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    interface IOrderService
+    public interface IOrderService
     {
         void Sale(Order order, Gamer gamer);
         void Addsale(Order order, Gamer gamer, Campaign campaign);

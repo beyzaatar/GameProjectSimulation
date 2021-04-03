@@ -2,13 +2,26 @@
 
 namespace GameProjectSimulation
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            GamerManager gamerManager = new GamerManager(new UserValidationManager());
-            gamerManager.Add(new Gamer { Id = 1, BirthYear = 1998, FirstName = "beyza", LastName = "atar", IdentityNumber = 12345 });
+            Gamer gamer1 = new Gamer()
+            {
+                Id = 1,
+                BirthYear = 1998,
+                FirstName = "beyza",
+                LastName = "atar",
+                IdentityNumber = 12345
+            };
+            UserValidationManager userValidationManager = new UserValidationManager();
 
+            GamerManager gamerManager = new GamerManager(userValidationManager);
+
+            gamerManager.Add(gamer1);
+            
+
+            
             Order order1 = new Order()
             {
                 Id = 1,
@@ -29,6 +42,9 @@ namespace GameProjectSimulation
             campaignManager.Update(campaign1);
 
             OrderManager orderManager = new OrderManager();
+            orderManager.Addsale(order1, gamer1, campaign1);
+            orderManager.Sale(order1, gamer1);
+
 
 
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    class OrderManager : IOrderService
+    public class OrderManager : IOrderService
     {
         public void Sale(Order order, Gamer gamer)
         {

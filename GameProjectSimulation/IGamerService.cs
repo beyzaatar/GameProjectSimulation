@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    interface IGamerService
+    public interface IGamerService
     {
         void Add(Gamer gamer);
         void Update(Gamer gamer);

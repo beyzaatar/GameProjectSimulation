@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    class GamerManager : IGamerService
+    public class GamerManager : IGamerService
     {
         IUserValidationService _userValidationService;
 

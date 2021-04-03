@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameProjectSimulation
 {
-    class Campaign
+    public class Campaign
     {
         public int Id { get; set; }
         public string CampaignName { get; set; }
